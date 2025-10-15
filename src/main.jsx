@@ -15,7 +15,10 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "@material-tailwind/react";
 import { MaterialTailwindControllerProvider } from "@/context";
-import "../public/css/tailwind.css";
+
+// Import global styles
+import "../public/css/tailwind.css";  // Tailwind base styles
+import "./global.css";               // ✅ Your custom global styles
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
