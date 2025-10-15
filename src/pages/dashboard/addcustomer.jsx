@@ -386,9 +386,7 @@ const StepperCustomerForm = () => {
                 <button type="button" onClick={addGrower} className="bg-[#9FC762] hover:bg-[#8DB350] text-white px-6 py-2 rounded-lg transition">
                   + Add Grower
                 </button>
-                     <button type="button" onClick={addGrower} className="bg-[#9FC762] hover:bg-[#8DB350] text-white px-6 py-2 rounded-lg transition">
-                  + Add Grower
-                </button>
+                  
                 <div className="flex gap-3">
                   <button type="button" onClick={prevStep} className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition">
                     Previous
