@@ -14,10 +14,13 @@ import {
   Tables,
   Notifications,
   Customer,
+  User
 } from "@/pages/dashboard";
 
 import Addcustomer from "@/pages/dashboard/addcustomer";
 import Viewcustomer from "@/pages/dashboard/viewcustomer";
+import AddUser from "@/pages/dashboard/adduser"; // <-- New
+import ViewUser from "@/pages/dashboard/viewuser"; // <-- New
 import { SignIn, SignUp } from "@/pages/auth";
 
 const icon = {
@@ -37,7 +40,7 @@ const routes = [
       {
         icon: <UsersIcon {...icon} />,
         name: "customers",
-        path: "/customers", // main customer page
+        path: "/customers",
         element: <Customer />,
         collapse: [
           {
@@ -49,6 +52,24 @@ const routes = [
             name: "View Customer",
             path: "/customers/view",
             element: <Viewcustomer />,
+          },
+        ],
+      },
+      {
+        icon: <UserCircleIcon {...icon} />,
+        name: "users", // <-- New main tab
+        path: "/users",
+        element: <User />, // optional if you have a main Users page, otherwise null
+        collapse: [
+          {
+            name: "Add User",
+            path: "/users/add",
+            element: <AddUser />,
+          },
+          {
+            name: "View User",
+            path: "/users/view",
+            element: <ViewUser />,
           },
         ],
       },
