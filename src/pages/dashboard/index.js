@@ -5,3 +5,6 @@ export * from "@/pages/dashboard/notifications";
 export * from  "@/pages/dashboard/customer";
 export * from "@/pages/dashboard/addcustomer";
 export * from "@/pages/dashboard/viewcustomer";
+export * from "@/pages/dashboard/user";
+export * from "@/pages/dashboard/viewuser";
+export * from "@/pages/dashboard/adduser";  
